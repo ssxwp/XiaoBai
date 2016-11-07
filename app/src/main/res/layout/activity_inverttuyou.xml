@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroudcolor"
+    tools:context="com.qingyuan.tianya.mrbuy.activity.InverActivity">
+    <com.qingyuan.tianya.mrbuy.view.view.HeaderView
+        android:id="@+id/inveor_tuy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:middleText="诚邀商家"
+        >
+    </com.qingyuan.tianya.mrbuy.view.view.HeaderView>
+    <ScrollView
+        android:id="@+id/ll_chenyaotuyou"
+        android:layout_below="@+id/inveor_tuy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+    <ImageView
+        android:id="@+id/iv_chenyaotuyou"
+        android:layout_width="match_parent"
+        android:background="@mipmap/tuyouchenyao"
+        android:layout_height="match_parent" />
+    </ScrollView>
+</RelativeLayout>

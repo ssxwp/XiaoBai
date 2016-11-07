@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudcolor"
+    tools:context="com.qingyuan.tianya.mrbuy.activity.VipCarActivity">
+
+    <com.qingyuan.tianya.mrbuy.view.view.HeaderView
+        android:id="@+id/vip_card_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:middleText="会员卡">
+
+    </com.qingyuan.tianya.mrbuy.view.view.HeaderView>
+
+    <RelativeLayout
+        android:id="@+id/head_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vip_card_head"
+        android:layout_margin="10dp"
+        android:background="@mipmap/vipbg">
+
+        <RelativeLayout
+            android:id="@+id/vip_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/vip_head_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="35dp"
+                fresco:placeholderImage="@mipmap/default_round_head" />
+
+            <TextView
+                android:id="@+id/vip_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="48dp"
+                android:layout_toRightOf="@id/vip_head_img"
+                android:textColor="@color/textcolor"
+                android:text="昵称：XXX"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/vip_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vip_name"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="7dp"
+                android:text="账号：XXXXXXXXXX"
+                android:layout_toRightOf="@id/vip_head_img"
+                android:textColor="@color/textcolor"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/vip_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="48dp"
+                android:background="@mipmap/vip_gold"
+                android:layout_toRightOf="@id/vip_name" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/qr_img"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/vip_rel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qr_img"
+            android:layout_centerHorizontal="true"
+            android:text="*商家扫描二维码，打折消费"
+            android:textColor="@color/lightdark" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/head_rel"
+        android:text=" 续费兔友会员，享受会员优惠 !  "
+        android:singleLine="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/searchviewvip"
+        android:gravity="center"
+        android:layout_height="40dp" />
+</RelativeLayout>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_pop_sort"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_all_sorted"
+            android:layout_width="match_parent"
+            android:layout_height="50dip">
+
+            <TextView
+                android:id="@+id/tv_all_sorted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dip"
+                android:singleLine="true"
+                android:text="全部"
+                android:textColor="@color/bright_red"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_tick1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:src="@mipmap/tick"
+                />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:layout_below="@id/rl_all_sorted"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@color/deepgray" />
+
+        <RelativeLayout
+            android:id="@+id/rl_snack_sorted"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/line1">
+
+            <TextView
+                android:id="@+id/snack_sorted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dip"
+                android:singleLine="true"
+                android:text="小吃"
+                android:textColor="@color/lightgray"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_sort_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"
+                android:layout_toRightOf="@id/snack_sorted"
+                />
+
+            <ImageView
+                android:id="@+id/iv_tick2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:visibility="gone"
+                android:src="@mipmap/tick"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:layout_below="@id/rl_snack_sorted"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@color/deepgray" />
+
+        <RelativeLayout
+            android:id="@+id/rl_dish_sorted"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/line2">
+
+            <TextView
+                android:id="@+id/dish_sorted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dip"
+                android:singleLine="true"
+                android:text="火锅"
+                android:textColor="@color/lightgray"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_sort_down1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"
+                android:layout_toRightOf="@id/dish_sorted"
+                 />
+
+            <ImageView
+                android:id="@+id/iv_tick3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:src="@mipmap/tick"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:layout_below="@id/rl_dish_sorted"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@color/deepgray" />
+
+        <RelativeLayout
+            android:id="@+id/rl_quick_sorted"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/line3">
+
+            <TextView
+                android:id="@+id/quick_sorted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dip"
+                android:singleLine="true"
+                android:text="快餐"
+                android:textColor="@color/lightgray"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_sort_down2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"
+                android:layout_toRightOf="@id/quick_sorted"
+                />
+
+            <ImageView
+                android:id="@+id/iv_tick4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:src="@mipmap/tick"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <View
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:layout_below="@id/rl_quick_sorted"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@color/deepgray" />
+        <RelativeLayout
+            android:id="@+id/rl_buffet_sorted"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/line4">
+
+            <TextView
+                android:id="@+id/buffet_sorted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dip"
+                android:singleLine="true"
+                android:text="自助餐"
+                android:textColor="@color/lightgray"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_sort_down3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"
+                android:layout_toRightOf="@id/buffet_sorted"
+                />
+
+            <ImageView
+                android:id="@+id/iv_tick5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:src="@mipmap/tick"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <View
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:layout_below="@id/rl_buffet_sorted"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@color/deepgray" />
+        <RelativeLayout
+            android:id="@+id/rl_bbq_sorted"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/line5">
+
+            <TextView
+                android:id="@+id/bbq_sorted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dip"
+                android:singleLine="true"
+                android:text="烧烤"
+                android:textColor="@color/lightgray"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_sort_down4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"
+                android:layout_toRightOf="@id/bbq_sorted"
+                />
+
+            <ImageView
+                android:id="@+id/iv_tick6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:src="@mipmap/tick"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <View
+            android:id="@+id/line6"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:layout_below="@id/rl_bbq_sorted"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@color/deepgray" />
+        <RelativeLayout
+            android:id="@+id/rl_dessert_sorted"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/line6">
+
+            <TextView
+                android:id="@+id/dessert_sorted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dip"
+                android:singleLine="true"
+                android:text="甜点"
+                android:textColor="@color/lightgray"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_sort_down5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"
+                android:layout_toRightOf="@id/dessert_sorted"
+                />
+
+            <ImageView
+                android:id="@+id/iv_tick7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:src="@mipmap/tick"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <View
+            android:id="@+id/line7"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:layout_below="@id/rl_dessert_sorted"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@color/deepgray" />
+        <RelativeLayout
+            android:id="@+id/rl_west_sorted"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/line7">
+
+            <TextView
+                android:id="@+id/west_sorted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dip"
+                android:singleLine="true"
+                android:text="西餐"
+                android:textColor="@color/lightgray"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_sort_down6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"
+                android:layout_toRightOf="@id/west_sorted"
+                />
+
+            <ImageView
+                android:id="@+id/iv_tick8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:src="@mipmap/tick"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

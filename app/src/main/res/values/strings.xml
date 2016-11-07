@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">兔友</string>
+    <string name="dialog_text_content">确定退出？</string>
+    <string name="dialog_text_nativ">取消</string>
+    <string name="dialog_text_postiv">确定</string>
+    <string name="progress_dialog_text">加载中...</string>
+
+    <string name="home_food">美食</string>
+    <string name="home_medical">医疗</string>
+    <string name="home_fun">娱乐</string>
+    <string name="home_ktv">KTV</string>
+    <string name="home_shopping">购物</string>
+    <string name="home_market">超市</string>
+    <string name="home_dress">服饰</string>
+    <string name="home_takeout">外卖</string>
+    <string name="home_service">生活服务</string>
+    <string name="home_education">学习培训</string>
+    <string name="home_bookstore">书店</string>
+    <string name="home_bigmarket">商场</string>
+    <string name="home_travel">旅游</string>
+    <string name="home_women">丽人</string>
+    <string name="home_more">全部</string>
+    <string name="home_vip">会员卡</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+
+    <string name="pull_to_refresh_pull_label">下拉刷新&#8230;</string>
+    <string name="pull_to_refresh_release_label">松开刷新&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新&#8230;</string>
+    <string name="pull_to_loadmore_pull_label">上拉加载更多&#8230;</string>
+    <string name="pull_to_loadmore_release_label">松开加载&#8230;</string>
+    <string name="pull_to_loadmore_loading_label">正在加载&#8230;</string>
+
+    <string name="category_hot">今日特卖</string>
+    <string name="category_clothe">服饰</string>
+    <string name="category_women">美人美妆</string>
+    <string name="category_digital">数码产品</string>
+    <string name="category_home">居家</string>
+    <string name="category_mmboy">母婴用品</string>
+
+    <!--  iconfont字体-->
+
+    <string name="icons_home">&#xe604;</string>
+    <string name="icons_car">&#xe603;</string>
+    <string name="icons_found">&#xe601;</string>
+    <string name="icons_personal">&#xe602;</string>
+    <string name="icons_food">&#xe61b;</string>
+    <string name="icons_medical">&#xe608;</string>
+    <string name="icons_fun">&#xe606;</string>
+    <string name="icons_ktv">&#xe600;</string>
+    <string name="icons_shopping">&#xe61a;</string>
+    <string name="icons_dress">&#xe605;</string>
+    <string name="icons_search">&#xe60a;</string>
+    <string name="icons_education">&#xe619;</string>
+    <string name="icons_service">&#xe609;</string>
+    <string name="icons_women">&#xe618;</string>
+    <string name="icons_more">&#xe607;</string>
+    <string name="icons_close">&#xe60b;</string>
+    <string name="icons_add">&#xe60e;</string>
+    <string name="icons_add2">&#xe60f;</string>
+    <string name="icons_left">&#xe60c;</string>
+    <string name="icons_right">&#xe60d;</string>
+    <string name="icons_spinner">&#xe610;</string>
+    <string name="icons_poi">&#xe611;</string>
+    <string name="icons_qr">&#xe612;</string>
+    <string name="icons_money">&#xe617;</string>
+    <string name="icons_message">&#xe615;</string>
+    <string name="icons_order">&#xe614;</string>
+    <string name="icons_collect">&#xe616;</string>
+    <string name="icons_setting">&#xe613;</string>
+    <string name="icons_vip">&#xe61e;</string>
+    <string name="icons_feedback">&#xe61c;</string>
+    <string name="icons_merchant">&#xe61d;</string>
+    <string name="icons_back">&#xe628;</string>
+    <string name="icons_save">&#xe623;</string>
+    <string name="icons_scored">&#xe61f;</string>
+    <string name="icons_moneys">&#xe625;</string>
+    <string name="icons_discount">&#xe624;</string>
+    <string name="icons_lottery">&#xe626;</string>
+    <string name="icons_charge">&#xe622;</string>
+    <string name="icons_vipcharge">&#xe620;</string>
+    <string name="icons_recharge">&#xe621;</string>
+    <string name="icons_lost">&#xe627;</string>
+    <string name="icons_ac">&#xe629;</string>
+    <string name="icons_mycall">&#xe62a;</string>
+    <string name="icons_mysell">&#xe62b;</string>
+    <string name="icons_mybuy">&#xe62c;</string>
+    <string name="icons_mylove">&#xe62d;</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

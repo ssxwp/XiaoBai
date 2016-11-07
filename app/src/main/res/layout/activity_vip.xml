@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudcolor"
+    tools:context="com.qingyuan.tianya.mrbuy.activity.VipActivity">
+
+    <com.qingyuan.tianya.mrbuy.view.view.HeaderView
+        android:id="@+id/ac_vip_back_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        fresco:middleText="会员中心">
+
+    </com.qingyuan.tianya.mrbuy.view.view.HeaderView>
+
+    <RelativeLayout
+        android:id="@+id/head_rel"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_below="@id/ac_vip_back_img"
+        android:background="@color/white">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/vip_head_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            fresco:placeholderImage="@mipmap/default_round_head" />
+
+        <TextView
+            android:id="@+id/vip_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/vip_head_img"
+            android:text="昵称：xx"
+            android:textColor="@color/textcolor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/vip_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vip_name"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/vip_head_img"
+            android:text="账号：xxxx"
+            android:textColor="@color/textcolor"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/vip_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/vip_name"
+            android:src="@mipmap/vip_gray" />
+        <TextView
+        android:id="@+id/vip_integral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcolor"
+        android:textSize="14sp"
+        android:text="积分：XX"
+        android:layout_below="@id/vip_account"
+        android:layout_toRightOf="@+id/vip_time"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        />
+        <TextView
+            android:id="@+id/vip_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vip_account"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/vip_head_img"
+            android:text="到期时间：xxxx年xx月xx日"
+            android:textColor="@color/textcolor" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/head_rel"
+        android:background="#aaaaaa" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/add_vip_rel"
+        android:background="#aaaaaa" />
+
+
+    <RelativeLayout
+        android:id="@+id/add_vip_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head_rel"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#aaaaaa" />
+        <!--<RadioButton
+            android:id="@+id/check_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            />
+        <TextView
+            android:id="@+id/text_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/check_one"
+            android:text="1个月"
+            android:textSize="14sp"
+            android:textColor="@color/lightgray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/check_one"
+            android:layout_below="@id/text_one"
+            android:text="￥ 10"
+            android:textSize="14sp"
+            android:textColor="@color/lightgray"/>-->
+        <!--<LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/text_one"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/onemonth"
+                />
+            <ImageView
+                android:id="@+id/text_two"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/three_months"
+
+                />
+            <ImageView
+                android:id="@+id/text_six"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/six_months"
+
+                />
+            <ImageView
+                android:id="@+id/text_ye"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/one_year"
+
+                />
+        </LinearLayout>-->
+        <GridView
+            android:id="@+id/vip_grid"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:columnWidth="40dp"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:numColumns="4"
+            android:cacheColorHint="#00000000"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" />
+
+        <!--<RadioButton
+            android:id="@+id/check_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/text_one"/>
+        <TextView
+            android:id="@+id/text_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/check_two"
+            android:text="3个月"
+            android:textSize="16sp"
+            android:textColor="@color/lightgray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/check_two"
+            android:layout_below="@id/text_one"
+            android:text="￥ 30"
+            android:textSize="16sp"
+            android:textColor="@color/lightgray"/>-->
+        <!--<RadioButton
+            android:id="@+id/check_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/text_two"/>
+        <TextView
+            android:id="@+id/text_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/check_six"
+            android:text="6个月"
+            android:textSize="16sp"
+            android:textColor="@color/lightgray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/check_six"
+            android:layout_below="@id/text_one"
+            android:text="￥ 60"
+            android:textSize="16sp"
+            android:textColor="@color/lightgray"/>
+        <RadioButton
+            android:id="@+id/check_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/text_six"/>
+        <TextView
+            android:id="@+id/text_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/check_year"
+            android:text="1年"
+            android:textSize="16sp"
+            android:textColor="@color/lightgray"/>
+        <TextView
+            android:id="@+id/text_ye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/check_year"
+            android:layout_below="@id/text_year"
+            android:text="￥120"
+            android:textSize="16sp"
+            android:textColor="@color/lightgray"/>-->
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/vip_grid"
+            android:layout_marginTop="5dp"
+            android:background="@color/backgroudcolor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view1"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:text="开通会员享受vip待遇"
+            android:textColor="@color/textcolor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/open"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/view1"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/searchviewa"
+            android:gravity="center"
+            android:text="立即开通"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/vip_special_lin"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/add_vip_rel"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="到店付"
+            android:textColor="@color/lightgray"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="#efefef" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="满减优惠"
+            android:textColor="@color/lightgray"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="#efefef" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="会员打折"
+            android:textColor="@color/lightgray"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/now_rel"
+        android:background="#aaaaaa" />
+
+    <RelativeLayout
+        android:id="@+id/now_rel"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/vip_special_lin"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#aaaaaa" />
+
+        <TextView
+            android:id="@+id/lost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="兔友余额"
+            android:textColor="@color/lightgray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/vip_lost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lost"
+            android:layout_marginLeft="20dp"
+            android:text="￥00.00"
+            android:textColor="@color/red"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/pay_purse"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/searchviewo"
+            android:gravity="center"
+            android:text="立即充值"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/order_rel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/now_rel"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#aaaaaa" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="我的订单"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/lightgray"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/back_arr" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/order_rel"
+        android:background="#aaaaaa" />
+</RelativeLayout>

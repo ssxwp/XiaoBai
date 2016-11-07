@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+      <string-array name="sort_name">
+        <item>夹克</item>
+        <item>衬衫</item>
+        <item>外套</item>
+        <item>毛衣</item>
+    </string-array>
+  <string-array name="spinnername">
+    <item>品牌</item>
+    <item>耐克 </item>
+    <item>阿迪</item>
+  </string-array>
+</resources>

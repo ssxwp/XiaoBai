@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudcolor"
+    tools:context="com.qingyuan.tianya.mrbuy.activity.ResultActivity">
+    <com.qingyuan.tianya.mrbuy.view.view.HeaderView
+        android:id="@+id/result_head"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:middleText="搜索结果">
+
+    </com.qingyuan.tianya.mrbuy.view.view.HeaderView>
+    <ListView
+        android:id="@+id/result_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_head"
+        android:cacheColorHint="@color/backgroudcolor"
+        android:divider="@color/backgroudcolor"
+        android:dividerHeight="6dip"
+        android:gravity="center"
+        android:listSelector="#00000000"
+        android:scrollbars="none"/>
+</RelativeLayout>

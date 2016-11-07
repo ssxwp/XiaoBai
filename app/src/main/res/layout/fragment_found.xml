@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroudcolor"
+    tools:context="com.qingyuan.tianya.mrbuy.fragment.FoundFragment">
+    <com.qingyuan.tianya.mrbuy.view.view.HeaderView
+        android:id="@+id/fr_found_head"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:middleText="发现">
+
+    </com.qingyuan.tianya.mrbuy.view.view.HeaderView>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroudcolor"
+    tools:context="com.qingyuan.tianya.mrbuy.activity.RegardtyyouActivity">
+    <com.qingyuan.tianya.mrbuy.view.view.HeaderView
+        android:id="@+id/regaid_tuy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:middleText="关于兔友"
+        >
+    </com.qingyuan.tianya.mrbuy.view.view.HeaderView>
+    <ScrollView
+        android:id="@+id/ll_tuyou"
+        android:layout_below="@+id/regaid_tuy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+    <ImageView
+        android:id="@+id/iv_tuyou"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/goods_headview"
+        android:background="@mipmap/tuyouxq"
+        android:layout_height="match_parent" />
+    </ScrollView>
+</RelativeLayout>

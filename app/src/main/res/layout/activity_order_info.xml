@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudcolor"
+    tools:context="com.qingyuan.tianya.mrbuy.activity.OrderInfoActivity">
+    <RelativeLayout
+        android:id="@+id/ac_order_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.qingyuan.tianya.mrbuy.view.view.HeaderView
+            android:id="@+id/ac_order_head"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+
+        </com.qingyuan.tianya.mrbuy.view.view.HeaderView>
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="30dip"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/order_unfinish_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_left_select"
+                android:gravity="center"
+                android:text="未完成"
+                android:textColor="#2b2b3a"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/order_finish_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_right"
+                android:gravity="center"
+                android:text="已完成"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/ac_order_fram"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ac_order_rel"/>  <!--<ListView-->
+    <!--android:id="@+id/order_list"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/ac_order_rel"-->
+    <!--android:cacheColorHint="@color/backgroudcolor"-->
+    <!--android:divider="@color/backgroudcolor"-->
+    <!--android:dividerHeight="4dip"-->
+    <!--android:gravity="center"-->
+    <!--android:listSelector="#00000000"-->
+    <!--android:paddingTop="5dip"-->
+    <!--android:scrollbars="none"/>
+-->
+</RelativeLayout>
