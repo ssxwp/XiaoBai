@@ -56,9 +56,9 @@ public class AddAddressActivity extends BaseActivity {
                 if (StringUtil.isNotEmpty(address.getText().toString())){
                     if (StringUtil.isNotEmpty(name.getText().toString())){
                         if (StringUtil.isEmpty(phone.getText().toString())){
-                            toast("");
+                            toast("手机号不能为空");
                         }else if (phone.getText().toString().trim().length()!=11){
-                            toast("");
+                            toast("手机号格式不对");
                         }else {
                             saveAddress();
                         }

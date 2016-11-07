@@ -28,6 +28,7 @@ import com.facebook.drawee.view.SimpleDraweeView;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.qingyuan.tianya.mrbuy.R;
+import com.qingyuan.tianya.mrbuy.activity.DaodActivity;
 import com.qingyuan.tianya.mrbuy.activity.HomeActivity;
 import com.qingyuan.tianya.mrbuy.activity.InverActivity;
 import com.qingyuan.tianya.mrbuy.activity.MerchantMessageActivity;
@@ -79,7 +80,7 @@ public class HomeFragment extends BaseFragment {
     private LinearLayout linear;
     private LinearLayout llguyututu;
     private ScrollView scroll;
-    private RelativeLayout rlguang_yu,rl_chengyaotuyao;
+    private RelativeLayout rlguang_yu,rl_chengyaotuyao,rl_daodtuyao;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -93,11 +94,13 @@ public class HomeFragment extends BaseFragment {
 
     @Override
     public void initView() {
+        rl_daodtuyao=(RelativeLayout)view.findViewById(R.id.rl_daodiao);
         rlguang_yu=(RelativeLayout)view.findViewById(R.id.rl_guangyutuyou);
         rl_chengyaotuyao=(RelativeLayout)view.findViewById(R.id.rl_chengyaotuyou);
         llguyututu=(LinearLayout)view.findViewById(R.id.ll_guangyututu);
         rl_chengyaotuyao.setOnClickListener(this);
         rlguang_yu.setOnClickListener(this);
+        rl_daodtuyao.setOnClickListener(this);
         scroll = ((ScrollView) view.findViewById(R.id.scroll));
         linear = (LinearLayout)view.findViewById(R.id.linear);
         fr_home_food_rel = ((ScrollTextView) view.findViewById(R.id.fr_home_food_rel));
@@ -323,6 +326,9 @@ public class HomeFragment extends BaseFragment {
                 break;
             case R.id.rl_chengyaotuyou:
                 skipActivityforClass(getActivity(), InverActivity.class,null);
+                break;
+            case R.id.rl_daodiao:
+                skipActivityforClass(getActivity(), DaodActivity.class,null);
                 break;
         }
 

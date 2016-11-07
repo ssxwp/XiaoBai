@@ -62,6 +62,7 @@
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.RegardtyyouActivity"/>
         <activity android:name=".activity.InverActivity"/>
+        <activity android:name=".activity.DaodActivity"/>
         <!--美食主界面-->
         <activity android:name=".activity.FoodMerchantActivity" />
         <!--美食详情界面-->

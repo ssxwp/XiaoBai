@@ -48,6 +48,7 @@
                     android:visibility="gone"
                     >
                         <RelativeLayout
+                            android:id="@+id/rl_daodiao"
                             android:layout_width="0dp"
                             android:layout_weight="308"
                             android:layout_height="match_parent"
