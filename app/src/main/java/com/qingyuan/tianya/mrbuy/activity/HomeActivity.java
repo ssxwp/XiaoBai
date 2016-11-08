@@ -328,7 +328,7 @@ public class HomeActivity extends BaseActivity implements TextWatcher {
                     fragment_fun = new FunFragment();
                 }
                 head.getMidTextView().setVisibility(View.VISIBLE);
-                head.getMidTextView().setText("休闲娱乐");
+                head.getMidTextView().setText("娱乐");
                 head.getHeadBackGround().setBackgroundColor(Color.argb(0, 0, 139, 255));
                 findViewById(R.id.home_head_search).setVisibility(View.GONE);
                 switchContent(fragment_fun);

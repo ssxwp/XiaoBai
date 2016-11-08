@@ -230,7 +230,6 @@ public class FoodFragment extends BaseFragment implements AdapterView.OnItemClic
         params.put("longitude",longitude+"");
         HttpUtil.get(urlString, params, new AsyncHttpResponseHandler() {
             public void onSuccess(String response) { // 获取数据成功会调用这里
-                Log.i("===============================================",response.toString());
                 try {
                     JSONObject jObj = new JSONObject(response.trim());
                     if (jObj.getString("flag").equals("success")) {
